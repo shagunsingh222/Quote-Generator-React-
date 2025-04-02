@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/the-hogwarts-library-1920-x-1138-wallpaper-op1lmkio8xnzxd9e.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 280px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 3em;
+    margin-bottom: 10px;
+}
+
+.author-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin-top: 15px;
+}
+
+.quote-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: #ff0008;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quote-button:hover {
+    background-color:green;
+}
