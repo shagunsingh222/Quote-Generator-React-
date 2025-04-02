@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 export function Body() {
-    const [quoteData, setQuoteData] = useState("");
+    const [quoteData, setQuoteData] = useState({
+        quote: "Click the button to get a quote!",
+        author: "Unknown"
+    });
 
     const getQuote = () => {
         fetch("https://dummyjson.com/quotes")
@@ -19,7 +22,10 @@ export function Body() {
     };
 
     return (
+        <>
+      
         <div className="container">
+        <h1>Quotes</h1>
             <div className="quote-box">
                 <p className="quote-text">"{quoteData.quote}"</p>
                 <p className="author-text">- {quoteData.author}</p>
@@ -28,5 +34,6 @@ export function Body() {
                 </button>
             </div>
         </div>
+        </>
     );
 }
